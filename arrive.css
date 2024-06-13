@@ -1,0 +1,63 @@
+/* styles.css */
+
+/* 头部样式 */
+header {
+    background-color: #4CAF50;
+    text-align: center;
+    padding: 1rem;
+}
+
+header h1 {
+    margin: 0;
+    color: white;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+div {
+    text-align: center;
+}
+
+.station-board {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.station {
+    padding: 10px;
+    margin: 5px;
+    background-color: #f1eeee;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.station.arrived {
+    background-color: green;
+    color: white;
+}
+
+
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: #000000;
+    padding: 10px;
+  }
