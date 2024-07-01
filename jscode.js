@@ -35,7 +35,7 @@ function MORorEVE(time){
     {name:"岳阳",lng:118.09556,lat:24.489922},
     {name:"海沧",lng:117.99133,lat:24.52721}
   ]
-  if(time<=8){
+  if(time>=6&&time<=8){
 
       gpsLoc_LH=gpsLocMor_LH
       return(1)
@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       let timestamp = now.getTime();
       let endTime=timestamp;
-      let beginTime=endTime;
+      let beginTime=endTime-1000*60*15;
 
 
       nowDate_begin= timestampToTime(beginTime);//开始时间
